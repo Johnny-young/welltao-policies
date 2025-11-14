@@ -1,128 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>WellTao – Privacy Policy</title>
-<style>
-    body { font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
-           max-width:900px;margin:40px auto;padding:20px;line-height:1.7;color:#333; }
-    h1,h2 { font-weight:600; }
-    a { color:#007aff;text-decoration:none; }
-</style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WellTao Privacy Policy</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fafafa;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 25px;
+            background: #fff;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.06);
+            border-radius: 12px;
+        }
+        h1, h2, h3 {
+            color: #222;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        a {
+            color: #0066cc;
+        }
+        .section {
+            margin-bottom: 35px;
+        }
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px;
+                padding: 18px;
+            }
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
 
-<h1>WellTao – Privacy Policy</h1>
-<p><strong>Effective Date:</strong> August 23, 2025<br>
-<strong>Last Updated:</strong> November 13, 2025</p>
+        <h1>WellTao Privacy Policy</h1>
+        <p><strong>Effective Date:</strong> August 23, 2025<br>
+        <strong>Last Updated:</strong> November 13, 2025</p>
 
-<p>WellTao (“we”, “our”, “the App”) is committed to protecting your privacy. 
-This Privacy Policy explains what data we collect, how we use it, and your rights.</p>
+        <div class="section">
+            <p>
+                Welcome to WellTao (“the App”, “we”, or “us”). We value your privacy and are committed
+                to protecting your personal data. This Privacy Policy describes how we collect, use,
+                store, share, and safeguard your information when you use WellTao.
+            </p>
+            <p>
+                By using the App, you acknowledge that you have read, understood, and agreed to this Privacy Policy.
+            </p>
+        </div>
 
-<h2>1. Information We Collect</h2>
+        <!-- SECTION 1 -->
+        <div class="section">
+            <h2>1. Information We Collect</h2>
+            <p>We only collect the minimum information necessary to operate and improve our services.
+               We do <strong>not</strong> collect any data unrelated to the App’s functionality.</p>
 
-<h3>1.1 Sign in with Apple (User-Provided)</h3>
-<p>When you log in using Sign in with Apple, we receive:</p>
-<ul>
-<li>Apple userIdentifier</li>
-<li>identityToken, authorizationCode, nonce</li>
-<li>Email or name (only if Apple allows sharing)</li>
-</ul>
-<p>This data is used only to create and log in to your WellTao account.</p>
+            <h3>1.1 Login & Account Information (User-Provided)</h3>
+            <p>When you use <strong>Sign in with Apple</strong>, we receive:</p>
+            <ul>
+                <li>Apple’s unique <code>userIdentifier</code></li>
+                <li>Authentication credentials (identityToken, authorizationCode, nonce)</li>
+                <li>Email, nickname, or name (only if provided by Apple during first authorization)</li>
+            </ul>
+            <p>This information is used only to create or log in to your WellTao account.</p>
 
-<h3>1.2 Constitution Test Data</h3>
-<ul>
-<li>Age (range or category)</li>
-<li>Gender</li>
-<li>Answers to constitution questionnaire</li>
-<li>Lifestyle preferences</li>
-</ul>
-<p>Used to generate your constitution result and wellness recommendations.</p>
+            <h3>1.2 Body Constitution Test Data</h3>
+            <ul>
+                <li>Age (range)</li>
+                <li>Gender</li>
+                <li>Questionnaire responses</li>
+                <li>Wellness preferences</li>
+            </ul>
 
-<h3>1.3 AI Interaction Data</h3>
-<ul>
-<li>Your messages/questions sent to AI</li>
-<li>Generated responses (stored as history)</li>
-</ul>
-<p>Your text is sent to external AI service providers (DeepSeek, or similar). 
-It is not used to identify you or train global models.</p>
+            <h3>1.3 AI Interaction Data</h3>
+            <p>Your messages to the AI, and the AI-generated responses, are sent to an external model provider (currently DeepSeek)
+               strictly to generate responses.</p>
 
-<h3>1.4 Subscription Data (via RevenueCat)</h3>
-<p>We receive and store:</p>
-<ul>
-<li>Your WellTao user ID</li>
-<li>Subscription type and status</li>
-<li>Start / expiration date</li>
-<li>Grace period or billing retry state</li>
-<li>Product ID</li>
-</ul>
+            <h3>1.4 Subscription Data (via RevenueCat)</h3>
+            <ul>
+                <li>Your WellTao user ID</li>
+                <li>Subscription tier</li>
+                <li>Start and expiration dates</li>
+                <li>Grace period / retry status</li>
+                <li>Product ID</li>
+            </ul>
 
-<h3>1.5 RevenueCat SDK (Automatically Collected by RevenueCat)</h3>
-<ul>
-<li>Device model</li>
-<li>OS version</li>
-<li>App version</li>
-<li>Language/region setting</li>
-<li>Anonymized RC device identifiers</li>
-</ul>
-<p>Used for subscription validation and fraud prevention.</p>
-
-<h3>1.6 What We Do NOT Collect</h3>
-<ul>
-<li>No IP address</li>
-<li>No location data</li>
-<li>No device fingerprint</li>
-<li>No photos, contacts, microphone, camera</li>
-<li>No advertising identifiers (IDFA)</li>
-<li>No system permissions</li>
-</ul>
-
-<h2>2. How We Use Your Data</h2>
-<ul>
-<li>Account creation & login</li>
-<li>Generate constitution assessments & wellness suggestions</li>
-<li>Submit your text to AI for responses</li>
-<li>Subscription management</li>
-<li>Display your history and personalized features</li>
-</ul>
-<p>We do not sell your data or use it for advertising.</p>
-
-<h2>3. Sharing of Information</h2>
-<h3>3.1 Necessary Service Providers</h3>
-<ul>
-<li>RevenueCat – subscription services</li>
-<li>AI API providers – to generate responses from your text</li>
-</ul>
-
-<h3>3.2 Legal Requirements</h3>
-<p>We may disclose data only if required by law.</p>
-
-<h2>4. Data Storage & Security</h2>
-<p>Your data is stored on DigitalOcean servers located in the United States.</p>
-<p>Security measures include HTTPS/TLS encryption, access control, 
-and limited developer access.</p>
-<p>Some data may remain temporarily in encrypted backups.</p>
-
-<h2>5. Your Rights</h2>
-<ul>
-<li>Access your subscription status</li>
-<li>Request correction</li>
-<li>Request account deletion (in-app or email)</li>
-<li>Withdraw consent by stopping service use</li>
-</ul>
-
-<h2>6. Children's Privacy</h2>
-<p>The app is not intended for children under 13.  
-We do not knowingly collect data from children.</p>
-
-<h2>7. Changes to This Policy</h2>
-<p>Updates will be announced via in-app notifications or email.</p>
-
-<h2>8. Contact Us</h2>
-<p>Email: <strong>contact@healthierpnr.top</strong><br>
-Owner: Yang Zongzhi<br>
-Address: Building 2, Room 601, Runjing Plaza, Yuhang District, Hangzhou, China</p>
-
-</body>
-</html>
+            <h3>1.5 Data Automatically Collected by RevenueCat</h3>
+            <ul>
+                <li>Device model</li>
+                <li>OS version</li>
+                <li>App version</li>
+                <li>Region/language (not precise location)</li>
+                <li>Anonymous device identifier</li>
+            <
