@@ -75,3 +75,166 @@
                 <li>Apple 提供的唯一用户标识符（userIdentifier）</li>
                 <li>身份验证凭证（identityToken、authorizationCode、nonce）</li>
                 <li>Apple 同意后提供的邮箱、昵称或姓名（仅首次授权）</li>
+            </ul>
+            <p>此类信息仅用于创建或登录 WellTao 账号，不会用于其他目的。</p>
+
+            <h3>2. 体质测试数据（用户主动提供）</h3>
+            <ul>
+                <li>年龄（区间）</li>
+                <li>性别</li>
+                <li>体质问卷回答</li>
+                <li>健康偏好（如调理方向、生活方式偏好）</li>
+            </ul>
+
+            <h3>3. AI 交互内容（用户主动输入）</h3>
+            <p>您输入给 AI 的问题内容，以及 AI 返回的体质分析与调理建议。</p>
+            <p>
+                这些内容会发送给外部 AI 服务商（当前为 DeepSeek）用于生成回答，不会用于训练基础模型，也不会识别您的真实身份。
+            </p>
+
+            <h3>4. 订阅与支付状态（通过 RevenueCat 获取）</h3>
+            <ul>
+                <li>您的 WellTao 用户 ID（后端 user.id）</li>
+                <li>订阅等级（如基础版/高级版）</li>
+                <li>订阅生效与到期时间</li>
+                <li>是否处于宽限期、扣款重试中</li>
+                <li>关联的商品 ID</li>
+            </ul>
+
+            <h3>5. RevenueCat SDK 自动收集的数据</h3>
+            <p>由 RevenueCat 自动采集，我们不会直接读取：</p>
+            <ul>
+                <li>设备型号（如 iPhone 14）</li>
+                <li>系统版本（如 iOS 17）</li>
+                <li>App 版本号</li>
+                <li>语言/区域设定（非位置信息）</li>
+                <li>SDK 自动生成的匿名设备标识符</li>
+            </ul>
+            <p>
+                RevenueCat 隐私政策：
+                <a href="https://www.revenuecat.com/privacy" target="_blank">https://www.revenuecat.com/privacy</a>
+            </p>
+
+            <h3>6. 我们不收集的数据</h3>
+            <ul>
+                <li>IP 地址</li>
+                <li>精确或粗略定位</li>
+                <li>广告标识符（IDFA）</li>
+                <li>通讯录、相机、照片、麦克风等权限</li>
+                <li>任何 iOS 系统权限数据</li>
+            </ul>
+        </div>
+
+        <!-- SECTION 2 -->
+        <div class="section">
+            <h2>二、我们如何使用您的信息</h2>
+            <ul>
+                <li>提供登录与账户服务</li>
+                <li>生成体质分析与调理建议</li>
+                <li>提交内容至 AI 模型以获取回答</li>
+                <li>管理订阅权限</li>
+                <li>为未登录用户提供匿名基础功能</li>
+                <li>显示历史测评结果</li>
+            </ul>
+            <p><strong>我们不会：</strong></p>
+            <ul>
+                <li>进行画像分析</li>
+                <li>出售任何用户数据</li>
+                <li>进行广告跟踪或跨应用跟踪（No Tracking）</li>
+            </ul>
+        </div>
+
+        <!-- SECTION 3 -->
+        <div class="section">
+            <h2>三、我们如何共享您的信息</h2>
+
+            <h3>1. 必要的技术服务提供商</h3>
+            <ul>
+                <li><strong>RevenueCat</strong> — 用于处理订阅信息</li>
+                <li><strong>AI 模型提供商（DeepSeek）</strong> — 用于生成 AI 回答</li>
+            </ul>
+
+            <h3>2. 法律要求</h3>
+            <p>如法律要求，我们可能根据法定义务提供必要数据。</p>
+
+            <h3>3. 我们不会进行的行为</h3>
+            <ul>
+                <li>不会出售用户信息</li>
+                <li>不会与广告商共享健康相关数据</li>
+                <li>不会共享与服务无关的数据</li>
+            </ul>
+        </div>
+
+        <!-- SECTION 4 -->
+        <div class="section">
+            <h2>四、数据存储与安全</h2>
+
+            <h3>1. 数据存储地点</h3>
+            <p>数据托管于 <strong>DigitalOcean（美国）</strong> 服务器。</p>
+
+            <h3>2. 数据保留期限</h3>
+            <p>数据将在账号存在期间持续保存，除非您主动申请删除。</p>
+
+            <h3>3. 安全措施</h3>
+            <ul>
+                <li>HTTPS / TLS 加密传输</li>
+                <li>严格的服务器访问权限</li>
+                <li>安全日志与身份验证机制</li>
+                <li>仅授权开发者可访问数据</li>
+            </ul>
+            <p>因服务器备份机制，部分已删除数据可能短暂保留于备份系统，但不会用于运营目的。</p>
+        </div>
+
+        <!-- SECTION 5 -->
+        <div class="section">
+            <h2>五、您的权利</h2>
+            <ul>
+                <li>在 App 内查看订阅信息</li>
+                <li>联系更正个人信息</li>
+                <li>通过 App 或邮件注销账户并删除数据</li>
+                <li>关闭 Apple 登录或停止使用服务</li>
+                <li>通过邮箱联系我们咨询或投诉</li>
+            </ul>
+        </div>
+
+        <!-- SECTION 6 -->
+        <div class="section">
+            <h2>六、儿童隐私保护</h2>
+            <p>
+                本应用不面向 <strong>13 岁以下</strong> 用户提供体质测试或 AI 功能。
+                如我们发现误收集儿童信息，将立即删除。
+            </p>
+        </div>
+
+        <!-- SECTION 7 -->
+        <div class="section">
+            <h2>七、国际数据传输</h2>
+            <p>
+                您的数据可能被传输至您所在国家/地区以外的服务器（包括美国）。
+                您使用本应用即视为同意此类传输。
+            </p>
+        </div>
+
+        <!-- SECTION 8 -->
+        <div class="section">
+            <h2>八、政策更新</h2>
+            <p>
+                我们可能会不定期更新本政策，并通过应用内弹窗或电子邮件进行通知。
+                如您继续使用本应用，则视为接受更新后的隐私政策。
+            </p>
+        </div>
+
+        <!-- SECTION 9 -->
+        <div class="section">
+            <h2>九、联系我们</h2>
+            <p>邮箱：<a href="mailto:contact@healthierpnr.top">contact@healthierpnr.top</a></p>
+            <p>负责人：杨宗志</p>
+            <p>地址：中国浙江省杭州市余杭区五常街道润景大厦 2 栋 601</p>
+        </div>
+
+        <div class="footer">
+            © 2025 WellTao. 版权所有。
+        </div>
+    </div>
+</body>
+</html>
