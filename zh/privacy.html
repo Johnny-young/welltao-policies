@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Welltao · 隐私政策</title>
+<style>
+  :root { --ink:#1f2a2e; --sub:#5b6b6e; --brand:#2a7a6f; --bg:#ffffff; --soft:#f4f7f6; --line:#e3eae8; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#e8efed; --sub:#9fb0ad; --bg:#141b1a; --soft:#1c2624; --line:#2a3634; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.75 -apple-system,"SF Pro Text","Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Microsoft YaHei",sans-serif; }
+  header { background:var(--soft); border-bottom:1px solid var(--line); padding:40px 20px 28px; }
+  .wrap { max-width:720px; margin:0 auto; }
+  .brand { color:var(--brand); font-weight:700; font-size:14px; letter-spacing:.12em; text-transform:uppercase; margin:0 0 6px; }
+  h1 { font-size:28px; margin:0 0 8px; }
+  .meta { color:var(--sub); font-size:14px; margin:0; }
+  nav.links { margin-top:14px; font-size:14px; }
+  nav.links a { color:var(--brand); text-decoration:none; margin-right:16px; }
+  nav.links a:hover { text-decoration:underline; }
+  main { padding:8px 20px 40px; }
+  h2 { font-size:19px; margin:32px 0 10px; }
+  p { margin:10px 0; }
+  ul { margin:10px 0; padding-left:22px; }
+  li { margin:6px 0; }
+  a { color:var(--brand); }
+  footer { border-top:1px solid var(--line); padding:20px; color:var(--sub); font-size:13px; text-align:center; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <p class="brand">Welltao</p>
+    <h1>隐私政策</h1>
+    <p class="meta">生效日期：2026 年 8 月 8 日 · 更新日期：2026 年 8 月 21 日</p>
+    <nav class="links">
+      <a href="../en/privacy.html">English</a>
+      <a href="../index.html">返回索引</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    <h2>一、我们收集的信息</h2>
+    <p>1. 账号信息：使用邮箱加密码登录时，我们存储您的邮箱地址；使用 Apple 或 Google 登录时，我们接收登录服务商共享的姓名与邮箱地址（Apple 可能提供隐藏邮件地址）。</p>
+    <p>2. 个人资料：您在应用内填写的昵称、性别与年龄，用于体质判定与个性化建议生成。</p>
+    <p>3. 问卷逐题作答明细：提交测评时上传至服务器，用于生成个性化调理建议，并与您的账号关联存储。</p>
+    <p>4. 体质判定结果摘要（各体质转化分与判定结论）：上传至服务器，与您的账号关联存储。</p>
+    <p>我们不收集您的精确位置、通讯录、相册、广告标识符或设备指纹。</p>
+
+    <h2>二、敏感个人信息（单独同意）</h2>
+    <p>性别、年龄、问卷作答与体质判定结果属于健康类敏感个人信息。我们仅在取得您的单独同意后，将其用于体质分析与调理建议生成。您有权拒绝或随时撤回该同意；撤回后不影响其他功能使用，您也可删除相关数据。</p>
+
+    <h2>三、信息的使用与共享</h2>
+    <p>您的信息仅用于提供体质测评与 AI 生成的个性化调理建议服务。调理建议由我们的服务端调用 AI 模型（DeepSeek）按需生成，AI 不会基于您的数据进行训练，也不会在请求之外保留您的信息。我们仅在以下场景向受信任的第三方处理者提供必要信息：</p>
+    <ul>
+      <li>Supabase（账号、数据库、Edge Functions）：用于账号鉴权、数据存储与服务端处理，托管于美国区域，已签署符合 GDPR 的数据处理协议。</li>
+      <li>DeepSeek（AI）：仅在加密传输下接收问卷作答与判定结果，用于按需生成您的个性化调理建议。</li>
+      <li>RevenueCat：处理应用内购收据与权益状态，我们不接触您的银行卡信息。</li>
+      <li>Apple App Store / Google Play：处理按报告单次解锁的付款，我们不接触您的银行卡号与支付账户信息。</li>
+    </ul>
+    <p>我们不出售任何个人信息，不与广告网络、数据中介或第三方分析机构共享您的数据。</p>
+
+    <h2>四、存储与安全</h2>
+    <p>您的登录会话由 Supabase Auth 管理，仅存储于您的设备本地。会话在您保持登录期间自动刷新，在您退出登录、注销账号或长期无活动后失效。未提交的问卷作答草稿仅存储于您本机，不会上传。已提交的问卷作答明细与体质判定结果存储于 Supabase 基础设施，传输采用 HTTPS 加密，存储层启用访问控制。我们将您的个人信息保留至您注销账号之时；账号注销后将按第五节所述永久删除全部数据。</p>
+
+    <h2>五、您的权利</h2>
+    <p>无论您身处何地，您均享有以下权利：</p>
+    <ul>
+      <li>查阅我们持有的您的个人数据。</li>
+      <li>更正不准确或不完整的数据。</li>
+      <li>删除账号与全部关联数据（「被遗忘权」）。</li>
+      <li>导出您的测评记录与调理建议（「数据可携权」）。</li>
+      <li>限制或反对特定处理活动。</li>
+      <li>随时撤回同意，撤回不影响此前合法进行的处理。</li>
+    </ul>
+    <p>欧盟/英国用户还可向当地数据保护机构投诉。加州用户可行使上述权利，并要求了解跨语境行为广告相关的数据共享情况（我们未进行任何此类共享）。</p>
+    <p>您可通过「我的 - 注销账号」删除全部数据，通过「我的 - 导出我的数据」申请数据副本（我们将在 7 天内投递至您的注册邮箱）。其他请求请来信 <a href="mailto:support@welltao.top">support@welltao.top</a>，我们将在 15 个工作日内免费回复。</p>
+
+    <h2>六、未成年人保护</h2>
+    <p>本应用面向成年人，不面向儿童。您需年满 13 周岁（或您所在国家/地区规定的最低年龄）方可使用本应用；未满该年龄者请在监护人同意与陪同下使用。</p>
+
+    <h2>七、跨境传输</h2>
+    <p>若数据需要传输至您所在国家/地区之外，我们依据欧盟标准合同条款（SCC）或同等 GDPR 合规机制进行。</p>
+
+    <h2>八、政策更新</h2>
+    <p>政策重大变更时，我们将以应用内弹窗等方式重新征得您的同意；变更生效后您继续使用本应用，即视为接受更新后的政策。</p>
+
+    <h2>九、联系我们</h2>
+    <p>隐私问题或投诉：<a href="mailto:support@welltao.top">support@welltao.top</a>，我们将在 15 个工作日内回复。</p>
+  </div>
+</main>
+<footer>© 2026 Welltao · <a href="mailto:support@welltao.top">support@welltao.top</a></footer>
+</body>
+</html>
