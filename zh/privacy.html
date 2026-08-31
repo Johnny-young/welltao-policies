@@ -5,27 +5,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Welltao · 隐私政策</title>
 <style>
-  :root { --ink:#1f2a2e; --sub:#5b6b6e; --brand:#2a7a6f; --bg:#ffffff; --soft:#f4f7f6; --line:#e3eae8; }
+  :root { --ink:#1f2a2e; --sub:#5b6b6e; --brand:#2a7a6f; --bg:#ffffff; --line:#e3eae8; }
   @media (prefers-color-scheme: dark) {
-    :root { --ink:#e8efed; --sub:#9fb0ad; --bg:#141b1a; --soft:#1c2624; --line:#2a3634; }
+    :root { --ink:#e8efed; --sub:#9fb0ad; --bg:#141b1a; --line:#2a3634; }
   }
   * { box-sizing: border-box; }
   body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.75 -apple-system,"SF Pro Text","Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Microsoft YaHei",sans-serif; }
-  header { background:var(--soft); border-bottom:1px solid var(--line); padding:40px 20px 28px; }
   .wrap { max-width:720px; margin:0 auto; }
-  .brand { color:var(--brand); font-weight:700; font-size:14px; letter-spacing:.12em; text-transform:uppercase; margin:0 0 6px; }
-  h1 { font-size:28px; margin:0 0 8px; }
-  .meta { color:var(--sub); font-size:14px; margin:0; }
-  nav.links { margin-top:14px; font-size:14px; }
-  nav.links a { color:var(--brand); text-decoration:none; margin-right:16px; }
-  nav.links a:hover { text-decoration:underline; }
-  main { padding:8px 20px 40px; }
+  header { padding:56px 20px 0; }
+  .brand { color:var(--sub); font-size:13px; margin:0 0 20px; }
+  h1 { font-size:30px; line-height:1.3; margin:0 0 6px; }
+  .meta { color:var(--sub); font-size:13px; margin:0; }
+  main { padding:32px 20px 40px; }
   h2 { font-size:19px; margin:32px 0 10px; }
   p { margin:10px 0; }
   ul { margin:10px 0; padding-left:22px; }
   li { margin:6px 0; }
   a { color:var(--brand); }
-  footer { border-top:1px solid var(--line); padding:20px; color:var(--sub); font-size:13px; text-align:center; }
+  a:hover { text-decoration:underline; }
+  footer { border-top:1px solid var(--line); padding:24px 20px; color:var(--sub); font-size:13px; text-align:center; }
+  footer .lang { margin-top:8px; }
+  footer .lang a { color:var(--sub); text-decoration:none; margin:0 8px; }
+  footer .lang a:hover { color:var(--brand); text-decoration:underline; }
 </style>
 </head>
 <body>
@@ -33,53 +34,56 @@
   <div class="wrap">
     <p class="brand">Welltao</p>
     <h1>隐私政策</h1>
-    <p class="meta">生效日期：2026 年 8 月 8 日 · 更新日期：2026 年 8 月 21 日</p>
-    <nav class="links">
-      <a href="../en/privacy.html">English</a>
-      <a href="../index.html">返回索引</a>
-    </nav>
+    <p class="meta">生效日期：2026 年 8 月 8 日 · 更新日期：2026 年 8 月 31 日</p>
   </div>
 </header>
 <main>
   <div class="wrap">
     <h2>一、我们收集的信息</h2>
-    <p>1. 账号信息：使用邮箱加密码登录时，我们存储您的邮箱地址；使用 Apple 或 Google 登录时，我们接收登录服务商共享的姓名与邮箱地址（Apple 可能提供隐藏邮件地址）。</p>
-    <p>2. 个人资料：您在应用内填写的昵称、性别与年龄，用于体质判定与个性化建议生成。</p>
+    <p>1. 账号信息：您的登录方式与邮箱地址。使用邮箱加密码登录时，我们存储您的邮箱地址；使用 Apple 或 Google 登录时，登录服务商会向我们共享一个邮箱地址（Apple 可能提供隐藏邮件地址）。若服务商同时共享了姓名，该姓名仅保留在我们鉴权服务商持有的鉴权记录中，不会用作您在应用内的昵称。您的昵称由我们生成（如「User482913」这样的随机名称），您可以随时修改。</p>
+    <p>2. 个人资料：您在应用内填写的昵称、性别与年龄，以及您的界面语言偏好，用于体质判定与个性化建议生成。</p>
     <p>3. 问卷逐题作答明细：提交测评时上传至服务器，用于生成个性化调理建议，并与您的账号关联存储。</p>
     <p>4. 体质判定结果摘要（各体质转化分与判定结论）：上传至服务器，与您的账号关联存储。</p>
-    <p>我们不收集您的精确位置、通讯录、相册、广告标识符或设备指纹。</p>
+    <p>5. 调理计划内容：您生成调理计划时，我们存储生成的计划文本（计划名、每日主线、调理预期、个人注意事项，以及按类别分组的推荐任务与提示）、生成时使用的语言，以及其所依据的测评记录。该内容一经生成即永久固定，不会被覆盖或重新生成；即使解锁被退款，已生成的内容仍可查看。</p>
+    <p>6. 计划执行记录（后续版本提供）：您在执行计划期间记录的打卡标记、每日日志（含您填写的自由文本备注，不超过 200 字）与周期问卷答复，以及计划的起止日期。这些记录用于向您展示执行进度与趋势。该功能在当前版本尚未启用；我们在此提前说明，是因为相应的存储已存在，并受第五节所述权利覆盖。</p>
+    <p>7. 购买与退款记录：您解锁报告时，我们存储 App Store 或 Google Play 提供的交易标识以及解锁状态；若发生退款，我们存储相应的退款记录。这些记录在您的账号存续期间保留，用于判定报告是否仍处于解锁状态。</p>
+    <p>8. 反馈内容：您通过「意见反馈」主动提交的文字内容，仅用于改进产品，与您的账号关联存储。</p>
+    <p>9. 服务端运行记录：为保障服务安全运行，我们保留有限的技术记录——来自 RevenueCat 的支付事件副本（含您的账号标识与交易信息，保留 90 天），以及以您的账号标识为主键的限流计数（记录生成计划、导出数据等操作的触发时间，保留 24 小时）。这些记录用于防范欺诈、排查故障与防止滥用。</p>
+    <p>我们不收集您的精确位置、通讯录、相册或设备指纹，不集成任何第三方统计、广告或崩溃收集组件，也不使用广告标识符（iOS 的 IDFA、Android 的 AAID）。我们的支付处理方 RevenueCat 会通过其 SDK 接收常规设备与应用信息，详见第三节。</p>
 
     <h2>二、敏感个人信息（单独同意）</h2>
-    <p>性别、年龄、问卷作答与体质判定结果属于健康类敏感个人信息。我们仅在取得您的单独同意后，将其用于体质分析与调理建议生成。您有权拒绝或随时撤回该同意；撤回后不影响其他功能使用，您也可删除相关数据。</p>
+    <p>性别、年龄、问卷作答与体质判定结果属于健康类敏感个人信息。我们仅在取得您的单独同意后，将其用于体质分析与调理建议生成。您可随时通过「我的 - 撤回隐私同意」撤回该同意。撤回后，我们将停止基于该数据进行的任何后续处理；已上传的数据仍与您的账号关联存储，直至您按第五节删除相关数据或注销账号。由于缺少该数据本应用无法提供核心功能，撤回同意后应用将返回首次启动的同意页面，您需重新作出同意后方可继续使用。</p>
 
     <h2>三、信息的使用与共享</h2>
     <p>您的信息仅用于提供体质测评与 AI 生成的个性化调理建议服务。调理建议由我们的服务端调用 AI 模型（DeepSeek）按需生成，AI 不会基于您的数据进行训练，也不会在请求之外保留您的信息。我们仅在以下场景向受信任的第三方处理者提供必要信息：</p>
     <ul>
       <li>Supabase（账号、数据库、Edge Functions）：用于账号鉴权、数据存储与服务端处理，托管于美国区域，已签署符合 GDPR 的数据处理协议。</li>
-      <li>DeepSeek（AI）：仅在加密传输下接收问卷作答与判定结果，用于按需生成您的个性化调理建议。</li>
-      <li>RevenueCat：处理应用内购收据与权益状态，我们不接触您的银行卡信息。</li>
-      <li>Apple App Store / Google Play：处理按报告单次解锁的付款，我们不接触您的银行卡号与支付账户信息。</li>
+      <li>DeepSeek（AI）：在加密传输下接收您的性别、年龄、问卷作答与体质判定结果，用于按需生成您的个性化调理建议。您的姓名、邮箱地址与昵称绝不会发送给 DeepSeek。DeepSeek 由杭州深度求索人工智能基础技术研究有限公司运营，其服务器位于中国大陆；该等向欧盟/英国境外的传输以您在首次启动时作出的单独同意为依据（GDPR 第 49 条第 1 款 a 项）。</li>
+      <li>RevenueCat：校验应用内购收据与解锁状态。我们以您的账号标识作为其用户标识，其 SDK 会接收常规设备与应用信息（设备型号、操作系统版本、应用版本与厂商标识符）。RevenueCat 位于美国。我们不接触您的银行卡信息。</li>
+      <li>Apple App Store / Google Play：处理按报告单次解锁的付款，并在您选择评分时处理应用内评分。我们不接触您的银行卡号与支付账户信息。</li>
+      <li>GitHub Pages：托管本政策及我们的其他法务文档。您打开法务文档时，文档由 GitHub 的服务器加载至您的系统浏览器，GitHub 可能接收您的 IP 地址、浏览器标识等技术信息。</li>
     </ul>
-    <p>我们不出售任何个人信息，不与广告网络、数据中介或第三方分析机构共享您的数据。</p>
+    <p>我们不出售任何个人信息，不与广告网络、数据中介或第三方分析机构共享您的数据。结果页的「分享」功能由您主动触发：包含测评结果摘要的图片经系统分享面板仅传递给您选择的目标（如信息或社交应用），我们不经手该过程。</p>
 
     <h2>四、存储与安全</h2>
-    <p>您的登录会话由 Supabase Auth 管理，仅存储于您的设备本地。会话在您保持登录期间自动刷新，在您退出登录、注销账号或长期无活动后失效。未提交的问卷作答草稿仅存储于您本机，不会上传。已提交的问卷作答明细与体质判定结果存储于 Supabase 基础设施，传输采用 HTTPS 加密，存储层启用访问控制。我们将您的个人信息保留至您注销账号之时；账号注销后将按第五节所述永久删除全部数据。</p>
+    <p>您的登录会话由 Supabase Auth 管理，仅存储于您的设备本地。会话在您保持登录期间自动刷新，在您退出登录、注销账号或长期无活动后失效。未提交的问卷作答草稿以加密形式仅存储于您本机，不会上传。草稿在您提交测评、重新开始测评或注销账号时清除；仅退出登录时予以保留，以便您重新登录后继续作答。本机缓存的报告列表与资料快照不含问卷逐题作答，并在您退出登录或注销账号时从本机清除。已提交的问卷作答明细与体质判定结果存储于 Supabase 基础设施，传输采用 HTTPS 加密，存储层启用访问控制。我们将您的个人信息保留至您注销账号之时；账号注销后将按第五节所述永久删除全部数据。</p>
 
     <h2>五、您的权利</h2>
     <p>无论您身处何地，您均享有以下权利：</p>
     <ul>
       <li>查阅我们持有的您的个人数据。</li>
-      <li>更正不准确或不完整的数据。</li>
+      <li>更正您的个人资料——昵称、性别与年龄（「我的 - 编辑资料」）。已提交的测评作为历史记录保存，其作答不可修改；如需删除，请按下方说明注销账号。</li>
       <li>删除账号与全部关联数据（「被遗忘权」）。</li>
-      <li>导出您的测评记录与调理建议（「数据可携权」）。</li>
-      <li>限制或反对特定处理活动。</li>
-      <li>随时撤回同意，撤回不影响此前合法进行的处理。</li>
+      <li>导出您的数据（「数据可携权」）。</li>
+      <li>随时撤回同意，撤回不影响撤回前基于同意已合法进行的处理。</li>
     </ul>
     <p>欧盟/英国用户还可向当地数据保护机构投诉。加州用户可行使上述权利，并要求了解跨语境行为广告相关的数据共享情况（我们未进行任何此类共享）。</p>
-    <p>您可通过「我的 - 注销账号」删除全部数据，通过「我的 - 导出我的数据」申请数据副本（我们将在 7 天内投递至您的注册邮箱）。其他请求请来信 <a href="mailto:support@welltao.top">support@welltao.top</a>，我们将在 15 个工作日内免费回复。</p>
+    <p><strong>注销账号</strong>——「我的 - 注销账号」。注销为立即生效且不可撤销：没有冷静期，也没有任何恢复途径。由于该操作无法撤销，我们会先请您重新登录一次（Apple、Google 或密码）以确认是您本人操作。注销账号将删除您的鉴权记录、个人资料、测评记录与逐题作答、调理计划与计划执行记录、购买与退款记录、反馈记录，以及第 1.9 条所述的服务端运行记录。</p>
+    <p><strong>导出数据</strong>——「我的 - 导出我的数据」。登录状态下点击即返回全量 JSON 文件，涵盖您的账号资料与登录方式、测评记录与逐题作答、调理计划与计划执行记录、解锁与退款状态、反馈记录，以及我们持有的与您相关的支付事件。若任一部分无法完整汇总，整个导出将失败，而不会返回不完整的文件。导出不含购买交易标识，完整收据请在您的 App Store 或 Google Play 账号中查看。</p>
+    <p>如您希望我们就特定处理活动作出限制或提出反对，或提出其他任何请求，请来信 <a href="mailto:support@welltao.top">support@welltao.top</a>，我们将在 15 个工作日内免费回复。</p>
 
-    <h2>六、未成年人保护</h2>
-    <p>本应用面向成年人，不面向儿童。您需年满 13 周岁（或您所在国家/地区规定的最低年龄）方可使用本应用；未满该年龄者请在监护人同意与陪同下使用。</p>
+    <h2>六、年龄限制</h2>
+    <p>本应用面向成年人，不面向儿童。您需年满 16 周岁方可进行体质测评并生成调理建议：应用在计分前会要求您填写年龄，应用与服务端均会拒绝低于 16 周岁的年龄。未满 16 周岁者请勿提交测评。</p>
 
     <h2>七、跨境传输</h2>
     <p>若数据需要传输至您所在国家/地区之外，我们依据欧盟标准合同条款（SCC）或同等 GDPR 合规机制进行。</p>
@@ -91,6 +95,12 @@
     <p>隐私问题或投诉：<a href="mailto:support@welltao.top">support@welltao.top</a>，我们将在 15 个工作日内回复。</p>
   </div>
 </main>
-<footer>© 2026 Welltao · <a href="mailto:support@welltao.top">support@welltao.top</a></footer>
+<footer>
+  © 2026 Welltao · <a href="mailto:support@welltao.top">support@welltao.top</a>
+  <div class="lang">
+    <a href="../en/privacy.html">English</a>
+    <a href="../index.html">返回索引</a>
+  </div>
+</footer>
 </body>
 </html>
